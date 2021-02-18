@@ -1,0 +1,89 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 3%;
+}
+
+ul {
+    padding: 0 14px;
+    margin: 0;
+}
+
+h1, h4 {
+    margin: 0;
+}
+
+h2 {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 7px
+}
+
+#container {
+    display: grid;
+    grid: repeat(3, auto)/1fr 1fr;
+    gap: 20px;
+}
+
+.blue {
+    color: rgb(47, 128, 237);
+}
+
+.left {
+    float: left;
+    margin-right: 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.border {
+    border-left: 2px solid black;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.bid-marker::marker {
+    font-size: 2em;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.pl70 {
+    padding-left: 70px;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
+
+.ml10 {
+    margin-left: 10px;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.empty-li {
+    margin-right: 49px;
+}
+
+@media (max-width: 700px) {
+    #container {
+        grid: repeat(6, auto)/ auto;
+    }
+
+    ul {
+        padding: 0 11px;
+    }
+
+    .empty-li {
+        margin-right: 49px;
+    }
+}
